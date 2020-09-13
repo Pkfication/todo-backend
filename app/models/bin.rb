@@ -1,5 +1,5 @@
 class Bin < ApplicationRecord
-  before_save :generate_key
+  before_create :generate_key
 
   validates_presence_of :text
 
