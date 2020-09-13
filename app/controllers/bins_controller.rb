@@ -35,6 +35,4 @@ class BinsController < ApplicationController
     params.permit(:text)
   end
 
-  attr_accessor
-
 end
