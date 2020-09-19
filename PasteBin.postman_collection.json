@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "7ee8f489-3cea-465c-a954-e0691f5ceafb",
+		"name": "PasteBin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Pankaj Gupta\",\n    \"email\": \"pankajgupta221b@gmail.com\",\n    \"password\": \"12345\",\n    \"password_confirmation\": \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mysterious-tor-21804.herokuapp.com/signup",
+					"protocol": "https",
+					"host": [
+						"mysterious-tor-21804",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"pankajgupta221b@gmail.com\",\n    \"password\": \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mysterious-tor-21804.herokuapp.com/auth/login",
+					"protocol": "https",
+					"host": [
+						"mysterious-tor-21804",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Index Bins",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MDAxMDY3MzZ9.RTz-lVB2P20IDcFh7mM4U5Ql_WX1HRb7ZCxDRdmc_I0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mysterious-tor-21804.herokuapp.com/bins",
+					"protocol": "https",
+					"host": [
+						"mysterious-tor-21804",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"bins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Bin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MDAxMDY3MzZ9.RTz-lVB2P20IDcFh7mM4U5Ql_WX1HRb7ZCxDRdmc_I0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Pankaj is the only guy in this world who can save the world right now!!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mysterious-tor-21804.herokuapp.com/bins",
+					"protocol": "https",
+					"host": [
+						"mysterious-tor-21804",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"bins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MDAxMDY3MzZ9.RTz-lVB2P20IDcFh7mM4U5Ql_WX1HRb7ZCxDRdmc_I0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://mysterious-tor-21804.herokuapp.com/bins/51a94b56d202a190562f2400e8314f61",
+					"protocol": "https",
+					"host": [
+						"mysterious-tor-21804",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"bins",
+						"51a94b56d202a190562f2400e8314f61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Bin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

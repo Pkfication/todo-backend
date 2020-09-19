@@ -1,24 +1,33 @@
-# README
+# TODOS Backend
+This todos backend is written in Ruby on rails 6. Just create a todo and you are on your way. Visit the frontend here.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Information
+- Ruby Version:    2.6.3
+- Rails Version:   6.0.3
+- Database:        pg
 
-* Ruby version
+## How To Run This Service
 
-* System dependencies
+Make your your system has rvm. Install the above dependencies. Follow these steps:
+- Clone this repository.
+- bundle install
+- rake db:setup
 
-* Configuration
+## Deploying to Heroku
 
-* Database creation
+Follow these steps to deploy to Heroku:
+- Make sure you are logged in from your Heroku-cli.
+- `heroku create`
+- `git push heroku master`
+- `heroku run rake db:setup`
 
-* Database initialization
+## API Spec
 
-* How to run the test suite
+This service has a couple of end points. It can be accessed from the POSTMAN collection included in the folder.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+
+ 
+ 
