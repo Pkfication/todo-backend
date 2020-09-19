@@ -3,6 +3,7 @@ class Bin < ApplicationRecord
 
   validates_presence_of :text
 
+  enum visibility: [:shared, :personal]
   private
 
   def generate_key
